@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>BRACKETS</title>
+        <meta name="description" content="An interactive getting started guide for Brackets.">
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <style>
+        html, body {
+            height: 100%;
+            background:#3498db;
+        }
+        .mainBox {
+            display: flex;
+            height: 100%;
+            flex-direction: row;
+            align-items: baseline;
+            justify-content: space-around;
+        }
+        .functionBox {
+            background:white;
+            margin-top: 10%;
+            width: 30%;
+            height: 30%;
+            border-style: solid;
+            text-align: center;
+            border: #2980b9 4px solid;
+            border-radius:10px;
+            
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+        }
+        
+        .inputBox {
+            width: 90%;
+            
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+        }
+        
+        .inputName {
+            width: 40%;
+            font-size: 2vh;
+        }
+        
+        .inputContent {
+            border: #ccc 1px solid;
+            width: 50%;
+            font-size: 2vh;
+        }
+        
+        .button {
+            background:#2ecc71;
+            border: #27ae60 1px solid;
+            border-radius:4px;
+            width: 30%;
+            font-size: 1.5vh;
+            text-align: center;
+            color: white;
+        }
+        
+    </style>
+    <body>
+        <div class="mainBox">
+            <form class="functionBox" method="POST">
+                <h2>Register</h2>
+                <div class="inputBox">
+                    <span class="inputName">Username :</span>
+                    <input class="inputContent" type="text" name="username"/>
+                </div>
+                <div class="inputBox">
+                    <span class="inputName">Password :</span>
+                    <input class="inputContent" type="password" name="password1"/>
+                </div>
+                <div class="inputBox">
+                    <span class="inputName">Repeat Password :</span>
+                    <input class="inputContent" type="password" name="password2"/>
+                </div>
+                <input type="submit" class="button" name="submit" value="Register">
+            </form>
+            <form class="functionBox" method="POST">
+                <h2>Login</h2>
+                <div class="inputBox">
+                    <span class="inputName">Username :</span>
+                    <input class="inputContent" type="password" name="username"/>
+                </div>
+                <div class="inputBox">
+                    <span class="inputName">Password :</span>
+                    <input class="inputContent" type="password" name="password"/>
+                </div>
+                <input type="submit" class="button" name="submit" value="Login">
+            </form>
+        </div>
+    </body>
+</html>
